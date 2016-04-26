@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Sign Up</title>
+<link rel="stylesheet" type="text/css" href="./css/index.css">
+<script type="text/javascript" src="./js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="./js/validateUser.js"></script>
+</head>
+<body>
+	<div id="header">
+		<h1>Find My Gadget</h1>
+	</div>
+	<div align="center" id="main">
+		<div id="error"></div>
+		<form id="registerform" method="post" action="registeruser.php">
+			<fieldset style="width: 400px">
+				<legend>Sign up:</legend>
+				<table>
+					<tbody>
+						<tr>
+							<td>Email Id*</td>
+							<td><input type="text" name="email" id="email"></td>
+						</tr>
+						<tr>
+							<td>First Name*</td>
+							<td><input type="text" name="fname" id="fname"></td>
+						</tr>
+						<tr>
+							<td>Last Name*</td>
+							<td><input type="text" name="lname" id="lname"></td>
+						</tr>
+						<tr>
+							<td>Gender</td>
+							<td><select id="gender" name="gender"><option
+										value="M">Male</option>
+									<option value="F">Female</option></select><input type="hidden"
+								name="genderval" id="genderval" /></td>
+						</tr>
+						<tr>
+							<td>Phone Number*</td>
+							<td><input type="text" name="phnumber" id="phnumber"
+								maxlength="10"></td>
+						</tr>
+						<tr>
+							<td>Address*</td>
+							<td><textarea rows="2" cols="10" name="address" id="address"></textarea>
+							</td>
+						</tr>
+						<tr>
+							<td>City*</td>
+							<td><input type="text" name="city" id="city"></td>
+						</tr>
+						<tr>
+							<td>State*</td>
+							<td><input type="text" name="state" id="state"></td>
+						</tr>
+						<tr>
+							<td>Zip Code*</td>
+							<td><input type="text" name="zipcode" id="zipcode"></td>
+						</tr>
+						<tr>
+							<td>Password*</td>
+							<td><input type="password" name="password" id="password"></td>
+						</tr>
+						<tr>
+							<td>Confirm Password*</td>
+							<td><input type="password" name="cpassword" id="cpassword"></td>
+						</tr>
+						<tr>
+							<td><input type="button" value="Signup"
+								onclick="validateForm()" /></td>
+							<td><input type="button" value="Back"
+								onclick="redirectToLogin()" /></td>
+						</tr>
+					</tbody>
+				</table>
+			</fieldset>
+		</form>
+	</div>
+	<div id="footer">Copyright © techstore.com</div>
+
+</body>
+</html>
